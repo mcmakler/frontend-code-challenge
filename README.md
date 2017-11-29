@@ -13,7 +13,7 @@ The programming challenge exists in 2 parts:
 
 ### PART A: HTML + CSS
 
-![Screen](https://raw.githubusercontent.com/mcmakler/frontend_interview_test/master/assets/fe_test_example_screen.png)
+![Screen](https://raw.githubusercontent.com/mcmakler/frontend-code-challenge/master/assets/fe_test_example_screen.png)
 
 * Create a layout based on the given screen (fe_test_example_screen.png).
 * Style the layout consistently and beautifully, adhering as closely to the design as possible.
