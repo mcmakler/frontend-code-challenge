@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test advertisements should render advertisements container 1`] = `
+<PageContainer
+  loaded={false}
+>
+  <CardList
+    items={
+      Array [
+        Object {},
+      ]
+    }
+  />
+</PageContainer>
+`;

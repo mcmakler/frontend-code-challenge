@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardFooter specs should match snapshot 1`] = `
+<div
+  className="cardFooter"
+>
+  <div
+    className="cardFooter__item cardFooter__item--bold"
+  >
+    
+     
+    
+  </div>
+  <div
+    className="cardFooter__item cardFooter__item--separated cardFooter__item--light"
+  >
+    <span>
+      
+       
+      
+    </span>
+    <span>
+      
+       
+      
+    </span>
+  </div>
+</div>
+`;

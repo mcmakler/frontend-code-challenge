@@ -1,2 +1,14 @@
 // packages
 @import '~flexboxgrid-sass/flexboxgrid';
+
+// base
+@import 'scss/base';
+
+// modules
+@import 'scss/modules';
+
+// components
+@import 'scss/components';
+
+// trumps
+@import 'scss/dependencies/trumps';

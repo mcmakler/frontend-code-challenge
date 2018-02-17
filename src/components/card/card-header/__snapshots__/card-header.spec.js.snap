@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardHeader specs should match snapshot 1`] = `
+<div
+  className="cardHeader"
+>
+  <img
+    alt=""
+    className="cardHeader__img"
+    src=""
+  />
+  
+</div>
+`;

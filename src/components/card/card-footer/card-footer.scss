@@ -1,0 +1,41 @@
+.cardFooter {
+  position: absolute;
+  bottom: 0;
+  padding: 30px;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardFooter__item--bold {
+  font-weight: 700;
+}
+
+.cardFooter__item--light {
+  font-weight: 100;
+}
+
+.cardFooter__item--separated > span {
+  display: inline-block;
+  position: relative;
+  padding: 0 20px;
+  font-weight: 100;
+
+  &:after {
+    content: '';
+    width: 1px;
+    height: 150%;
+    position: absolute;
+    right: 0;
+    top: -25%;
+    background-color: #e3e3e3;
+  }
+
+  &:last-child {
+    padding-right: 0;
+
+    &:after {
+      content: none;
+    }
+  }
+}

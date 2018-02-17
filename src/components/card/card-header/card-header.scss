@@ -1,0 +1,24 @@
+@import '../../../scss/dependencies/palette';
+@import '../../../scss/dependencies/variables';
+@import '../../../scss/dependencies/spacing';
+
+.cardHeader {
+  position: relative;
+}
+
+.cardHeader__img {
+  max-width: 100%;
+}
+
+.cardHeader__tag {
+  position: absolute;
+  text-transform: capitalize;
+  left: $primary-space / 2;
+  top: $primary-space / 2;
+  color: $secondary-color;
+  padding: $secondary-space;
+  box-shadow: $primary-shadow;
+  font-size: $secondary-font-size;
+  border-radius: $primary-border-radius;
+  background-color: $primary-background-color;
+}
