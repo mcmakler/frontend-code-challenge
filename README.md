@@ -8,11 +8,22 @@ Vacant Apartments is an application to list advertisements for vacant apartments
 *Vacant Apartments* consists of _3_ components and _2_ containers and uses `React` and `Redux` as a state container and `Sass` as css preprocessor.
 
 ##### Components
+Components are the key element of the application, and their importance comes from reusability. Components must be **decoupled**
+from the data itself, and should be generic to handle many types of data according to their instructions.
 ##### Containers
-##### Difference between `component` and `container`
+Containers are opposite when it comes to handling data, Containers must be aware of the type of data and act upon them.
+That's why I use `stateful` components to represent containers because they care about the application state. On the other
+hand, components are `stateless`.
 ##### Container State
-##### Application State
+I use `Redux` to manage application state and it must be updated by dispatching an `actions` and make changes through `reducers`
+only without mutation;
 ##### Naming convention
+- file naming convention
+I use the same convention that `react` uses for their packages, `dashCase` or `kebabCase`.
+- file postfix
+I find it important to append postfix to file names, makes it easier when navigating between files and you don't have to check
+the file path to determine whether it's `reducer`, `action` or `action types`.
+I know it makes importing longer, but I choose fast navigation or determination over shorter path names.
 
 ### About Stack
 
