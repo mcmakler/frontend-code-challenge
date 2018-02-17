@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header specs should match snapshot 1`] = `
+<div
+  className="header"
+>
+  <h1
+    className="header__title"
+  >
+    Vacant Apartments
+  </h1>
+</div>
+`;

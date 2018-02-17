@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test page container should render page container 1`] = `
+<div
+  className="full-height page"
+>
+  <Header />
+  <div
+    className="container auto-margin full-height"
+  >
+    <div
+      className="row center-xs full-height"
+    >
+      <div
+        className="col-xs-12 relative"
+      >
+        <Loader>
+          <div>
+            page container
+          </div>
+        </Loader>
+      </div>
+    </div>
+  </div>
+</div>
+`;

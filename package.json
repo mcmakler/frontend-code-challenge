@@ -7,7 +7,13 @@
   "author": "Tejas Kumar <tejas.kumar@mcmakler.de>",
   "license": "MIT",
   "scripts": {
-    "serve": "webpack-dev-server"
+    "serve": "webpack-dev-server",
+    "lint": "eslint ./src/**/**.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "coverage": "jest --coverage",
+    "precommit": "npm run lint -- --fix && npm test",
+    "prepush": "npm run lint && npm test"
   },
   "dependencies": {
     "axios": "^0.17.1",

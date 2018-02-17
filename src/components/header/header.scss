@@ -1,0 +1,17 @@
+@import '../../scss/dependencies/palette';
+@import '../../scss/dependencies/variables';
+@import '../../scss/dependencies/spacing';
+
+.header {
+  background-color: $primary-color;
+  color: #fff;
+  padding: 0 $primary-space;
+  margin-bottom: $primary-space;
+  box-shadow: $primary-shadow;
+}
+
+.header__title {
+  height: $primary-header-height;
+  line-height: $primary-header-height;
+  font-size: 22px;
+}
