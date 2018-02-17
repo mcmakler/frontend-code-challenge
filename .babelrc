@@ -1,4 +1,10 @@
 {
-  "presets": "babel-preset-env",
-  "plugins": ["syntax-async-functions"]
+  "presets": [
+    "es2015",
+    "react"
+  ],
+
+  "plugins": [
+    "react-hot-loader/babel"
+  ]
 }
