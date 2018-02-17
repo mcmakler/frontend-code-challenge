@@ -1,49 +1,72 @@
-# Front-End Interview Test
+![Image of Vacant Apartments](https://i.imgur.com/ZB6aEWT.png)
 
-This is a simple front-end code challenge created to serve two purposes:
+Vacant Apartments is an application to list advertisements for vacant apartments.
 
-1. Show off your skills,
-1. Give us a better understanding of your skills.
 
-## The Task
+### Application Overview
 
-The programming challenge exists in 2 parts:
-* Part A: HTML + CSS
-* Part B: Javascript
+*Vacant Apartments* consists of _3_ components and _2_ containers and uses `React` and `Redux` as a state container and `Sass` as css preprocessor.
 
-### PART A: HTML + CSS
+##### Components
+##### Containers
+##### Difference between `component` and `container`
+##### Container State
+##### Application State
+##### Naming convention
 
-![Screen](https://raw.githubusercontent.com/mcmakler/frontend-code-challenge/master/assets/fe_test_example_screen.png)
+### About Stack
 
-* Create a layout based on the given screen (fe_test_example_screen.png).
-* Style the layout consistently and beautifully, adhering as closely to the design as possible.
-* **NOTE:** You are free to use any preprocessor you wish, or write raw CSS. *Bonus points for an explanation of your choice.*
+#### *Why React ?*
+React emphasize the component approach, in fact React is all about building components. along with virtual DOM, React makes it easier to to work the virtual DOM instead the real one.
 
-### PART B: Javascript
+#### *Why Redux ?*
 
-* Consume our public API @ https://api.mcmakler.de/v1/advertisements to retrieve a list of advertisements of vacant apartments.
-* Display the first 10 advertisements in the HTML + CSS layout created in step A, sticking to the layout, placing data where it fits.
-* **NOTE:** You are free to use any framework you wish, or do it VanillaJS style. *Brief explanation of your choice.*
+Redux is state container for the application. It makes it easier to predict and track application state changes that are described as actions. Changing application state made only on `reducer`s which are simple pure functions change the application state taking in consideration the immutability of the state.
 
-## Additional Instructions
+#### *Why Sass ?*
 
-* Fork this repository
-* After you're done, provide us the link to your repository.
-* Leave comments where you were not sure how to properly proceed.
-* Implementations without a README will be automatically rejected.
-* No pull requests
-* ES6 and above
+Sass is a css preprocessor for writing css, Sass is more declarative and introduce a lot of features such as `selector inheritance` and better conditional statements with `@if` `@else` and looping `@for`.
 
-## Bonus Points
+#### Installation
 
-* Tests
-* Clean code!
-* Knowledge of application flow.
-* Knowledge of modern best practices/coding patterns.
-* Demonstration of good state management.
-* Usage of frameworks/supersets.
-* Pixel perfection.
-* Componential thinking.
-* Usage of linters.
-* Git hooks.
-* Usage of Material Design concepts
+
+- clone this repo ` clone git@github.com:d7my11/frontend-code-challenge.git`
+- run `npm install` to install dependencies
+- run `npm start` to start the server
+- hit `http://localhost:3000` on the browser.
+
+##### Running tests
+
+```
+npm test
+```
+
+##### Running test Coverage
+
+```
+npm run coverage
+```
+
+##### Running linter
+```
+npm run lint
+```
+
+##### Generator
+
+```
+plop [container, component, reducer]
+```
+
+##### Main dependencies
+
+| **Dependency** | **Use** |
+|----------|-------|
+|react|React Library |
+|react-dom|React library for DOM rendering |
+|redux|Library for unidirectional data flows |
+|react-redux|Redux library for connecting React components to Redux |
+|redux-thunk|Async Redux wrapping action creators |
+|react-router-dom|React library for routing bounded to DOM |
+|axios|Promise based HTTP client |
+|flexboxgrid-sass|Grid based on CSS3 flexbox  |
