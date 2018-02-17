@@ -1,25 +1,28 @@
 .cardFooter {
-  position: absolute;
-  bottom: 0;
-  padding: 30px;
-  width: 95%;
   display: flex;
-  justify-content: space-between;
+  padding: 30px;
 }
 
-.cardFooter__item--bold {
+.cardFooter__item__text {
+  font-weight: 100;
+  padding: 0 10px;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.cardFooter__item__text--bold {
   font-weight: 700;
 }
 
-.cardFooter__item--light {
-  font-weight: 100;
-}
-
-.cardFooter__item--separated > span {
+.cardFooter__item__text--separated {
   display: inline-block;
   position: relative;
-  padding: 0 20px;
-  font-weight: 100;
 
   &:after {
     content: '';
@@ -28,7 +31,7 @@
     position: absolute;
     right: 0;
     top: -25%;
-    background-color: #e3e3e3;
+    background-color: $secondary-outline;
   }
 
   &:last-child {

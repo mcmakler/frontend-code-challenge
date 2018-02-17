@@ -1,5 +1,9 @@
+// NOTE: to override flexboxgrid defaults
+$gutter-width: 2rem !default;
+
 // packages
 @import '~flexboxgrid-sass/flexboxgrid';
+
 
 // base
 @import 'scss/base';

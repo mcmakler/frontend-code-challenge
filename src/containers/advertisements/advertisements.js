@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import { connect } from 'react-redux';
+import { loadAdvertisments } from '../../actions/advertisements-actions/advertisements-actions';
+import { carder } from '../../utils';
 
 import Page from '../page/page';
-import CardList from '../../components/card-list/card-list';
-import { loadAdvertisments } from '../../actions/advertisements-actions/advertisements-actions';
+import Card from '../../components/card/card';
 
 export class AdvertisementsContainer extends React.Component {
   constructor(props, context) {
@@ -16,23 +16,29 @@ export class AdvertisementsContainer extends React.Component {
   }
 
   componentDidMount() {
-    this.fetch();
+    this._fetch();
   }
 
   componentWillReceiveProps(nextProps) {
     this.setState({ advertisements: nextProps.advertisements, loaded: true });
   }
 
-  fetch() {
+  _fetch() {
     this.props.loadAdvertisments();
   }
 
   render() {
     return (
       <Page loaded={this.state.loaded}>
-        <CardList
-          items={this.props.advertisements}
-        />
+        <div className='row center-xs between-md'>
+          {
+            this.props.advertisements.map(item => {
+              const options = carder(item);
+
+              return (<Card key={item.id} {...options} />);
+            })
+          }
+        </div>
       </Page>
     );
   }

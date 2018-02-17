@@ -4,7 +4,7 @@ import { itemMapper } from './mapper';
 
 describe('mapper itemMapper utility', () => {
   it('should map item and assign formatted obj', () => {
-    const actual = itemMapper(advertisementObj).formatted;
+    const actual = itemMapper(advertisementObj);
 
     expect(actual).toEqual(expectedObj);
   });
@@ -21,7 +21,7 @@ describe('mapper itemMapper utility', () => {
       space: 78.78000000000003
     };
     const withoutAddress = Object.assign({}, advertisementObj, { realestateSummary });
-    const actual = itemMapper(withoutAddress).formatted;
+    const actual = itemMapper(withoutAddress);
 
     expect(actual).toEqual(expectedObj);
   });

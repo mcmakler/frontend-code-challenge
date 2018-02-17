@@ -15,25 +15,18 @@ const getAddress = address => address.fullAddress || addressStr(address);
 const getPrice = price => priceFormatter(price.baseRent || price.sellPrice);
 
 export function itemMapper(item) {
+  const id = item._id.$id;
   const thumb = getThumb(item.advertisementAssets);
   const title = getTitle(item.title);
   const tag = getTage(item.advertisementPrice);
   const address = getAddress(item.realestateSummary.address);
   const showAddress = item.userWishes.visibleAddress;
-  const price = {
-    value: getPrice(item.advertisementPrice),
-    label: constants.currencyLabel
-  };
-  const rooms = {
-    value: item.realestateSummary.numberOfRooms,
-    label: constants.roomLabel
-  };
-  const space = {
-    value: round(item.realestateSummary.space),
-    label: ''
-  };
+  const price = getPrice(item.advertisementPrice);
+  const rooms = item.realestateSummary.numberOfRooms;
+  const space = round(item.realestateSummary.space);
 
-  const formatted = {
+  return {
+    id,
     thumb,
     title,
     price,
@@ -43,6 +36,4 @@ export function itemMapper(item) {
     address,
     showAddress
   };
-
-  return Object.assign({}, item, { formatted });
 }

@@ -1,5 +1,6 @@
 export default {
   currencyLabel: '€',
+  spaceLabel: 'ab',
   roomLabel: 'Zimmer',
   defaultWordCount: 10,
   titleWordCount: 7,
