@@ -3,13 +3,13 @@ const backslash = '/';
 const concatUrl = url => baseUrl + url + backslash;
 
 const endpointsObj = {
-  advertisements : 'advertisements'
+  advertisements: 'advertisements'
 };
 
 const getFormattedUrl = key => {
   const point = endpointsObj[key];
   const url = concatUrl(point);
-  return { [key]: url };
+  return {[key]: url};
 };
 
 const endpointKeys = Object.keys(endpointsObj);

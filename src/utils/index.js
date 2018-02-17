@@ -6,7 +6,6 @@ import flow from './flow/flow';
 import * as specialCharacter from './special-characters/special-characters';
 import * as mapper from './mapper/mapper';
 
-
 export {
   priceFormatter,
   specialCharacter,

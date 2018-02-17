@@ -13,7 +13,9 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:import/errors',
-    'plugin:import/warnings'
+    'plugin:import/warnings',
+    'xo/esnext',
+    'xo-react'
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -65,6 +67,11 @@ module.exports = {
     'react/prop-types': 1,
     'react/react-in-jsx-scope': 1,
     'react/self-closing-comp': 1,
-    'react/sort-comp': 1
+    'react/sort-comp': 1,
+    'react/forbid-component-props': 0,
+    'react/jsx-closing-tag-location': 0,
+    'react/jsx-closing-bracket-location': 0,
+    'react/jsx-first-prop-new-line': 0,
+    'react/jsx-handler-names': 0,
   }
 };
