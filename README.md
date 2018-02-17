@@ -1,4 +1,4 @@
-![Image of Vacant Apartments](https://i.imgur.com/ZB6aEWT.png)
+![Image of Vacant Apartments](https://i.imgur.com/gpsplTB.png)
 
 Vacant Apartments is an application to list advertisements for vacant apartments.
 
