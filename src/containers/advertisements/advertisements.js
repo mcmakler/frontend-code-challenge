@@ -2,10 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {loadAdvertisments} from '../../actions/advertisements-actions/advertisements-actions';
-import {carder} from '../../utils';
 
 import Page from '../page/page';
-import Card from '../../components/card/card';
+import AdvertisementsList from './advertisements-list/advertisements-list';
 
 export class AdvertisementsContainer extends React.Component {
   constructor(props, context) {
@@ -31,13 +30,7 @@ export class AdvertisementsContainer extends React.Component {
     return (
       <Page loaded={this.state.loaded}>
         <div className='row center-xs between-md'>
-          {
-            this.props.advertisements.map(item => {
-              const options = carder(item);
-
-              return (<Card key={item.id} {...options}/>);
-            })
-          }
+          <AdvertisementsList items={this.props.advertisements}/>
         </div>
       </Page>
     );

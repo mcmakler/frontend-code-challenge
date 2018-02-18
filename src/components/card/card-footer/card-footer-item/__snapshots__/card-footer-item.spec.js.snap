@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardFooterItem specs should match snapshot with data 1`] = `
+<span
+  className="cardFooter__item__text "
+>
+  price
+   
+  111
+   
+  
+</span>
+`;

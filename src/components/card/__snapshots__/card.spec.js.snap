@@ -31,50 +31,6 @@ exports[`Card specs should match snapshot 1`] = `
     >
       Im Bonnefeld 7, 47259 Duisburg
     </div>
-    <div
-      className="cardFooter"
-    >
-      <div
-        className="cardFooter__item--left auto-right-margin"
-      >
-        <span
-          className="cardFooter__item__text cardFooter__item__text--bold "
-        >
-           
-          374
-           
-          €
-        </span>
-      </div>
-      <div
-        className="cardFooter__item--right"
-      >
-        <span
-          className="cardFooter__item__text  cardFooter__item__text--separated"
-        >
-           
-          3
-           
-          Zimmer
-        </span>
-        <span
-          className="cardFooter__item__text  cardFooter__item__text--separated"
-        >
-          ab
-           
-          79
-           
-          <span>
-            m
-            <span
-              className="align-super font-10"
-            >
-              2
-            </span>
-          </span>
-        </span>
-      </div>
-    </div>
   </div>
 </div>
 `;

@@ -5,30 +5,20 @@ import CardHeader from './card-header/card-header';
 import CardTitle from './card-title/card-title';
 import CardText from './card-text/card-text';
 import CardFooter from './card-footer/card-footer';
+import CardFooterItem from './card-footer/card-footer-item/card-footer-item';
 
-const Card = ({header, footer, title, text}) => {
+const Card = ({children}) => {
   return (
     <div className='col-xs-12 col-sm-6 col-md-4 card'>
       <div className='box card__box'>
-        <CardHeader {...header}/>
-        <CardTitle {...title}/>
-        <CardText {...text}/>
-        {footer && footer.items.length && <CardFooter {...footer}/>}
+        {children}
       </div>
     </div>
   );
 };
 
 Card.propTypes = {
-  header: PropTypes.object.isRequired,
-  title: PropTypes.object.isRequired,
-  footer: PropTypes.object,
-  text: PropTypes.object
+  children: PropTypes.array.isRequired
 };
 
-Card.defaultProps = {
-  footer: {items: []},
-  text: ''
-};
-
-export default Card;
+export {Card as default, CardHeader, CardTitle, CardText, CardFooter, CardFooterItem};
