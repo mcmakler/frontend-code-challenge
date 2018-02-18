@@ -5,7 +5,7 @@ import Header from './header';
 
 describe('Header specs', () => {
   it('should match snapshot', () => {
-    const component = ReactTestRenderer.create(<Header />);
+    const component = ReactTestRenderer.create(<Header/>);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

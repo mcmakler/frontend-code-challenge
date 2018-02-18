@@ -1,7 +1,7 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import {shallow} from 'enzyme';
 import toJson from 'enzyme-to-json';
-import { AdvertisementsContainer } from './advertisements';
+import {AdvertisementsContainer} from './advertisements';
 import {mapper} from '../../utils';
 import advertisementObj from '../../../fixtures/advertisement-fixture';
 

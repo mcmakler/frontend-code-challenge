@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const CardFooter = ({ items }) => {
+const CardFooter = ({items}) => {
   const right = items.filter(item => item.options && item.options.right);
   const left = items.filter(item => !item.options || !item.options.right);
 
@@ -10,14 +10,13 @@ const CardFooter = ({ items }) => {
     const isSeperated = item.options && item.options.seperated ? 'cardFooter__item__text--separated' : '';
     const footerTextClassNames = `cardFooter__item__text ${isBold} ${isSeperated}`;
 
-    return { footerTextClassNames };
+    return {footerTextClassNames};
   };
   const getItemElement = (item, itemAttrs) => (
     <span key={item.name} className={itemAttrs.footerTextClassNames}>
       {item.preLabel} {item.value} {item.postLabel}
     </span>
   );
-
 
   return (
     <div className='cardFooter'>

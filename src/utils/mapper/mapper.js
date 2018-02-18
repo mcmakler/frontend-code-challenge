@@ -1,5 +1,5 @@
 import constants from '../../constants';
-import { priceFormatter, trim, round, specialCharacter } from '../../utils';
+import {priceFormatter, trim, round, specialCharacter} from '../../utils';
 
 const addressStr = address => {
   return `${address.street} ${address.number}, ${address.postalCode} ${address.city}`;

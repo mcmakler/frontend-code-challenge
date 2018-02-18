@@ -2,7 +2,6 @@ import trim from './trim';
 import constants from '../../constants';
 
 describe('trim utility', () => {
-
   const text = 'FLATSCREEN ZUM EINZUG Moderne, frisch sanierte 3 Zi-Wohnung mit herrlichem Ausblick';
 
   it('should trim text without words count based on default count', () => {

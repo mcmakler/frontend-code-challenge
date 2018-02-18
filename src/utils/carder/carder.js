@@ -5,9 +5,9 @@ import constants from '../../constants';
  * Card utility for (advertisements) container
  */
 export default function carder(item) {
-  const header = { thumb: item.thumb, tag: item.tag, alt: item.title };
-  const title = { title: item.title };
-  const text = item.showAddress ? { text: item.address } : {};
+  const header = {thumb: item.thumb, tag: item.tag, alt: item.title};
+  const title = {title: item.title};
+  const text = item.showAddress ? {text: item.address} : {};
   const footer = {
     items: [
       {
@@ -40,5 +40,5 @@ export default function carder(item) {
     ]
   };
 
-  return { header, footer, text, title };
+  return {header, footer, text, title};
 }

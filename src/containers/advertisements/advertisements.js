@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import { loadAdvertisments } from '../../actions/advertisements-actions/advertisements-actions';
-import { carder } from '../../utils';
+import {connect} from 'react-redux';
+import {loadAdvertisments} from '../../actions/advertisements-actions/advertisements-actions';
+import {carder} from '../../utils';
 
 import Page from '../page/page';
 import Card from '../../components/card/card';
@@ -12,7 +12,7 @@ export class AdvertisementsContainer extends React.Component {
     super(props, context);
 
     const loaded = false;
-    this.state = { loaded };
+    this.state = {loaded};
   }
 
   componentDidMount() {
@@ -20,7 +20,7 @@ export class AdvertisementsContainer extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    this.setState({ advertisements: nextProps.advertisements, loaded: true });
+    this.setState({advertisements: nextProps.advertisements, loaded: true});
   }
 
   _fetch() {
@@ -35,7 +35,7 @@ export class AdvertisementsContainer extends React.Component {
             this.props.advertisements.map(item => {
               const options = carder(item);
 
-              return (<Card key={item.id} {...options} />);
+              return (<Card key={item.id} {...options}/>);
             })
           }
         </div>

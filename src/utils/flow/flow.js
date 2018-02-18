@@ -1,5 +1,5 @@
-export default function flow (funcs) {
-  return function(data) {
+export default function flow(funcs) {
+  return function (data) {
     funcs.forEach(func => {
       data = func(data);
     });

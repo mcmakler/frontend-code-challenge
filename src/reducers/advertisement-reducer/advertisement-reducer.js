@@ -1,6 +1,6 @@
 import initialState from '../initial-state';
-import { advertisementTypes } from '../../constants/actions';
-import { mapper } from '../../utils';
+import {advertisementTypes} from '../../constants/actions';
+import {mapper} from '../../utils';
 
 function advertisementReducer(state = initialState.advertisements, action) {
   switch (action.type) {

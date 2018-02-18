@@ -14,7 +14,9 @@ exports[`test page container should render page container 1`] = `
       <div
         className="col-xs-12 relative"
       >
-        <Loader>
+        <Loader
+          loaded={false}
+        >
           <div>
             page container
           </div>

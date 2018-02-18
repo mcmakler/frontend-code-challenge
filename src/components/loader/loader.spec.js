@@ -5,7 +5,6 @@ import Loader from './loader';
 
 describe('Loader specs', () => {
   it('should match snapshot', () => {
-
     const component = ReactTestRenderer.create(
       <Loader loaded={false}>
         <div>inside loader</div>

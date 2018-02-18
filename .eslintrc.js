@@ -46,6 +46,7 @@ module.exports = {
     'react/jsx-closing-bracket-location': 0,
     'react/jsx-curly-spacing': 1,
     'react/jsx-indent-props': 0,
+    'react/jsx-indent': [1, 2],
     'react/jsx-key': 1,
     'react/jsx-max-props-per-line': 0,
     'react/jsx-no-bind': 1,
@@ -62,6 +63,7 @@ module.exports = {
     'react/no-did-update-set-state': 1,
     'react/no-direct-mutation-state': 1,
     'react/no-set-state': 0,
+    'react/no-unused-state': 0,
     'react/no-unknown-property': 1,
     'react/prefer-es6-class': 1,
     'react/prop-types': 1,
@@ -73,5 +75,6 @@ module.exports = {
     'react/jsx-closing-bracket-location': 0,
     'react/jsx-first-prop-new-line': 0,
     'react/jsx-handler-names': 0,
+    'jsx-quotes': ['error', 'prefer-single']
   }
 };

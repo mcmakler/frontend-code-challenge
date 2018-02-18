@@ -9,7 +9,7 @@ describe('CardHeader specs', () => {
       tag: '',
       alt: ''
     };
-    const component = ReactTestRenderer.create(<CardHeader {...props} />);
+    const component = ReactTestRenderer.create(<CardHeader {...props}/>);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

@@ -5,10 +5,6 @@ import Header from '../../components/header/header';
 import Loader from '../../components/loader/loader';
 
 class PageContainer extends React.Component {
-  constructor(props, context) {
-    super(props, context);
-  }
-
   render() {
     return (
       <div className='full-height page'>
@@ -16,7 +12,9 @@ class PageContainer extends React.Component {
         <div className='container auto-margin full-height'>
           <div className='row center-xs full-height'>
             <div className='col-xs-12 relative'>
-              <Loader loaded={this.props.loaded} children={this.props.children} />
+              <Loader loaded={this.props.loaded}>
+                {this.props.children}
+              </Loader>
             </div>
           </div>
         </div>
@@ -28,6 +26,10 @@ class PageContainer extends React.Component {
 PageContainer.propTypes = {
   children: PropTypes.object.isRequired,
   loaded: PropTypes.bool
+};
+
+PageContainer.defaultProps = {
+  loaded: false
 };
 
 export default PageContainer;

@@ -1,6 +1,6 @@
 import advertisementObj from '../../../fixtures/advertisement-fixture';
 import expectedObj from '../../../fixtures/expected-advertisement-fixture';
-import { itemMapper } from './mapper';
+import {itemMapper} from './mapper';
 
 describe('mapper itemMapper utility', () => {
   it('should map item and assign formatted obj', () => {
@@ -15,12 +15,12 @@ describe('mapper itemMapper utility', () => {
         street: 'Im Bonnefeld',
         number: '7',
         postalCode: '47259',
-        city: 'Duisburg',
+        city: 'Duisburg'
       },
       numberOfRooms: 3,
       space: 78.78000000000003
     };
-    const withoutAddress = Object.assign({}, advertisementObj, { realestateSummary });
+    const withoutAddress = Object.assign({}, advertisementObj, {realestateSummary});
     const actual = itemMapper(withoutAddress);
 
     expect(actual).toEqual(expectedObj);

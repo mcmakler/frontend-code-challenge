@@ -4,7 +4,7 @@ import ReactTestRenderer from 'react-test-renderer';
 
 describe('CardTitle specs', () => {
   it('should match snapshot', () => {
-    const component = ReactTestRenderer.create(<CardText text='card text' />);
+    const component = ReactTestRenderer.create(<CardText text='card text'/>);
 
     expect(component.toJSON()).toMatchSnapshot();
   });
