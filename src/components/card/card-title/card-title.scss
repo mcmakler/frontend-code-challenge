@@ -1,0 +1,12 @@
+@import '../../../scss/dependencies/palette';
+@import '../../../scss/dependencies/variables';
+@import '../../../scss/dependencies/spacing';
+
+.cardTitle {
+  height: 98px;
+  text-align: left;
+  color: $primary-color;
+  padding: $primary-space;
+  font-size: $primary-font-size;
+  font-weight: $primary-font-weight;
+}

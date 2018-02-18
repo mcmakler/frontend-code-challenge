@@ -1,0 +1,23 @@
+@import 'dependencies/variables';
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  margin: 0;
+  font-weight: $primary-font-weight;
+}
+
+a, a:hover, a:focus {
+  text-decoration: none;
+}

@@ -1,0 +1,19 @@
+@import '../../scss/dependencies/palette';
+@import '../../scss/dependencies/variables';
+@import '../../scss/dependencies/spacing';
+
+
+// sub-components
+@import 'card-header/card-header';
+@import 'card-title/card-title';
+@import 'card-text/card-text';
+@import 'card-footer/card-footer';
+
+.card {
+  margin-bottom: $primary-space;
+}
+
+.card__box {
+  height: 100%;
+  border: 1px solid $secondary-outline;
+}

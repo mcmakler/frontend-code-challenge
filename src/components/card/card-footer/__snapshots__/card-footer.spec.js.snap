@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardFooter specs should match snapshot with data 1`] = `
+<div
+  className="cardFooter"
+>
+  <div
+    className="cardFooter__item--left auto-right-margin"
+  >
+    <span
+      className="cardFooter__item__text "
+    >
+      price
+       
+      374
+       
+      
+    </span>
+  </div>
+</div>
+`;

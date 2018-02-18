@@ -1,0 +1,11 @@
+@import '../../../scss/dependencies/palette';
+@import '../../../scss/dependencies/variables';
+@import '../../../scss/dependencies/spacing';
+
+.cardText {
+  text-align: left;
+  padding: 0 $primary-space;
+  color: $secondary-color;
+  font-size: $secondary-font-size;
+  font-weight: $primary-font-weight;
+}

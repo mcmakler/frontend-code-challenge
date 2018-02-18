@@ -7,16 +7,81 @@
   "author": "Tejas Kumar <tejas.kumar@mcmakler.de>",
   "license": "MIT",
   "scripts": {
-    "serve": "webpack-dev-server"
+    "serve": "webpack-dev-server",
+    "lint": "eslint ./src/**/**/**.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "coverage": "jest --coverage",
+    "precommit": "npm run lint -- --fix && npm test",
+    "prepush": "npm run lint && npm test"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "flexboxgrid-sass": "^8.0.5",
+    "react": "16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "4.2.2",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
-    "babel-core": "^6.25.0",
-    "babel-loader": "^7.0.0",
-    "babel-preset-env": "^1.5.2",
-    "eslint": "^4.0.0",
-    "html-webpack-plugin": "^2.28.0",
-    "style-loader": "^0.18.2",
-    "webpack": "^2.6.1",
-    "webpack-dev-server": "^2.4.5"
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.0",
+    "babel-eslint": "8.1.2",
+    "babel-jest": "22.2.2",
+    "babel-loader": "7.1.2",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-react": "6.24.1",
+    "babel-preset-react-boilerplate": "1.1.1",
+    "babel-preset-react-hmre": "1.1.1",
+    "babel-preset-stage-2": "6.24.1",
+    "copy-webpack-plugin": "4.3.0",
+    "css-loader": "0.28.9",
+    "enzyme": "3.3.0",
+    "enzyme-adapter-react-16": "1.1.1",
+    "enzyme-to-json": "^3.3.1",
+    "eslint": "^4.16.0",
+    "eslint-config-xo": "^0.20.1",
+    "eslint-config-xo-react": "^0.16.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-react": "^7.6.1",
+    "eslint-watch": "^3.1.3",
+    "extract-text-webpack-plugin": "3.0.2",
+    "file-loader": "1.1.6",
+    "html-webpack-plugin": "2.30.1",
+    "husky": "0.15.0-rc.2",
+    "jest": "^22.3.0",
+    "nock": "^9.1.6",
+    "node-sass": "4.7.2",
+    "open-browser-webpack-plugin": "0.0.5",
+    "react-addons-test-utils": "15.6.2",
+    "react-hot-loader": "^4.0.0-beta.22",
+    "react-test-renderer": "^16.2.0",
+    "redux-immutable-state-invariant": "^2.1.0",
+    "redux-logger": "^3.0.6",
+    "redux-mock-store": "^1.5.1",
+    "sass-loader": "6.0.6",
+    "style-loader": "0.19.1",
+    "url-loader": "0.6.2",
+    "webpack": "3.11.0",
+    "webpack-dev-server": "2.9.6"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "setupFiles": [
+      "./config/jest.config.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "globals": {
+      "API_URL": "https://api.mcmakler.de/v1/"
+    },
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)$": "<rootDir>/config/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/config/styleMock.js"
+    }
   }
 }

@@ -1,0 +1,44 @@
+.cardFooter {
+  display: flex;
+  padding: 30px;
+}
+
+.cardFooter__item__text {
+  font-weight: 100;
+  padding: 0 10px;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.cardFooter__item__text--bold {
+  font-weight: 700;
+}
+
+.cardFooter__item__text--separated {
+  display: inline-block;
+  position: relative;
+
+  &:after {
+    content: '';
+    width: 1px;
+    height: 150%;
+    position: absolute;
+    right: 0;
+    top: -25%;
+    background-color: $secondary-outline;
+  }
+
+  &:last-child {
+    padding-right: 0;
+
+    &:after {
+      content: none;
+    }
+  }
+}
